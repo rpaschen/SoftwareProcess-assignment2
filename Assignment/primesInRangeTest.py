@@ -16,3 +16,10 @@ class PrimeInRangeTest(unittest.TestCase):
         expectedResult = [2, 3, 5, 7]
         actualResult = primesInRange.primesInRange(lowBound, highBound)
         self.assertListEqual(expectedResult, actualResult)
+        
+    def test020_ShouldTestLowBound(self):
+        lowBound = 1
+        highBound = 10
+        expectedResult = [2, 3, 5, 7]
+        actualResult = primesInRange.primesInRange(lowBound, highBound)
+        self.assertListEqual(expectedResult, actualResult)
